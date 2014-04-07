@@ -53,7 +53,7 @@ exports.template = function(grunt, init, done) {
     var files = init.filesToCopy(props);
 
     // Getting files to your choosen directory
-    init.copyAndProcess(files, props, {noProcess: ['wp-includes/**/*', 'wp-admin/**/*', 'wp-content/plugins/**/*']});
+    init.copyAndProcess(files, props, {noProcess: ['wp-includes/**/*', 'wp-admin/**/*', 'wp-content/plugins/**/*', 'wp-content/themes/**/*']});
 
     // All done!
     done();
